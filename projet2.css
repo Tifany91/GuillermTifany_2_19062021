@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("Raleway-Regular.ttf");
+}
+
+body {
+  font-family: Raleway-Regular;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+#conteneurbas {
+  display: flex;
+  justify-content: space-around;
+}
