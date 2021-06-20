@@ -5,17 +5,145 @@
 
 body {
   font-family: Raleway-Regular;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
-.menu li {
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: #0065fc;
+}
+
+#menu li {
+  margin-left: 20px;
+  margin-right: 20px;
   display: inline;
 }
 
-.menu ul {
+#menu li a {
+  text-decoration: none;
+}
+
+#menu ul {
   list-style-type: none;
 }
 
-#conteneurbas {
+#hebergements {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#locations1 {
+  background-color: #f2f2f2;
+  width: 68%;
+  padding: 20px;
+}
+
+#location1-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.imgconteneur1 {
+  width: 30%;
+  height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid white;
+  margin-bottom: 40px;
+  box-shadow: 4px 4px 15px grey;
+  background-color: white;
+}
+
+.imgconteneur1 img {
+  width: 100%;
+  height: 55%;
+}
+
+#locations2 {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 23%;
+
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.imgconteneur2 {
+  display: flex;
+  overflow: hidden;
+
+  height: 120px;
+
+  margin-bottom: 40px;
+
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px grey;
+
+  background-color: white;
+}
+
+.imgconteneur2 img {
+  width: 100px;
+  height: auto;
+}
+
+/* .imgconteneur321 {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgconteneur31 {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid white;
+  margin: 10px;
+  box-shadow: 4px 4px 15px grey;
+  background-color: white;
+}
+
+.imgconteneur32 {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid white;
+  margin: 10px;
+  box-shadow: 4px 4px 15px grey;
+  background-color: white;
+}
+
+.imgconteneur31 img {
+  width: 110px;
+  height: 220px;
+}
+
+.imgconteneur32 img {
+  width: 220px;
+  height: 110px;
+}
+
+#section3 {
+  display: flex;
+  justify-content: space-between;
+} */
+
+footer {
+  display: flex;
+  justify-content: start;
+  background-color: #f2f2f2;
+}
+
+footer div {
+  margin-right: 250px;
 }
