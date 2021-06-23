@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="projet2.css" />
+    <meta name="viewport" content="width=device-width" />
     <title>Reservia, vos vacances de rêve</title>
     <script
       src="https://kit.fontawesome.com/647404011c.js"
@@ -12,12 +13,16 @@
 
   <body>
     <nav>
-      <div class="titre"><h1>Reservia</h1></div>
-      <div id="menu">
-          <div class="element"><a href="#ancrehebergements">Hébergements</a></div>
-          <div class="element"><a href="#ancreactivites">Activités</a></div>
-          <div class="element"><strong> S'inscrire </strong></div>
       <div>
+        <h1>Reservia</h1>
+      </div>
+      <div id="menu">
+        <div id="menu-group-1">
+          <div><a href="#ancrehebergements">Hébergements</a></div>
+          <div><a href="#ancreactivites">Activités</a></div>
+        </div>
+        <div><strong> S'inscrire </strong></div>
+      </div>
     </nav>
 
     <header>
@@ -25,14 +30,11 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <form>
-        <div class="Recherche">
-          <div class="place_icon">
-            <i class="fa-solid fa-money-bill-wave"></i>
-          </div>
+        <div class="recherche">
+          <div class="place_icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="filter_text"><strong> Marseille, France </strong></div>
-          <div class="search_icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+          <div class="search_icon"><i class="fas fa-search"></i></div>
+          <div class="search_text"><strong>Rechercher</strong></div>
         </div>
       </form>
 
@@ -40,35 +42,35 @@
 
       <div class="filter">
         <div class="filter_icon">
-          <i class="fa-solid fa-money-bill-wave"></i>
+          <i class="fas fa-money-bill-wave"></i>
         </div>
         <div class="filter_text"><strong> Economique </strong></div>
       </div>
 
       <div class="filter">
         <div class="filter_icon">
-          <i class="fa-solid fa-money-bill-wave"></i>
+          <i class="fas fa-child"></i>
         </div>
         <div class="filter_text"><strong> Familial </strong></div>
       </div>
 
       <div class="filter">
         <div class="filter_icon">
-          <i class="fa-solid fa-money-bill-wave"></i>
+          <i class="fas fa-heart"></i>
         </div>
         <div class="filter_text"><strong> Romantique </strong></div>
       </div>
 
       <div class="filter">
         <div class="filter_icon">
-          <i class="fa-solid fa-money-bill-wave"></i>
+          <i class="fas fa-dog"></i>
         </div>
         <div class="filter_text"><strong>Animaux autorisés </strong></div>
       </div>
 
       <p>
-        <i class="fa-solid fa-info" style="color: #0065fc"></i> Plus de 500
-        logements sont disponibles dans cette ville
+        <i class="fas fa-info" style="color: #0065fc"></i>
+        Plus de 500 logements sont disponibles dans cette ville
       </p>
     </header>
 
@@ -84,7 +86,12 @@
             />
             <p>
               <strong>Auberge la Cannebière </strong> <br />
-              Nuit à partir de <strong> 25€ </strong>
+              Nuit à partir de <strong> 25€ </strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: grey"></i>
             </p>
           </div>
 
@@ -96,7 +103,12 @@
 
             <p>
               <strong>Hôtel du port </strong> <br />
-              Nuit à partir de <strong> 52€ </strong>
+              Nuit à partir de <strong> 52€ </strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
             </p>
           </div>
 
@@ -107,7 +119,12 @@
             />
             <p>
               <strong> Hôtel Les mouettes </strong> <br />
-              Nuit à partir de <strong> 76€ </strong>
+              Nuit à partir de <strong> 76€ </strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: grey"></i>
             </p>
           </div>
 
@@ -118,7 +135,12 @@
             />
             <p>
               <strong> Hôtel de la mer </strong> <br />
-              Nuit à partir de <strong>46€</strong>
+              Nuit à partir de <strong>46€</strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: grey"></i>
+              <i class="fas fa-star" style="color: grey"></i>
             </p>
           </div>
 
@@ -129,7 +151,12 @@
             />
             <p>
               <strong>Auberge Le Panier </strong> <br />
-              Nuit à partir de <strong> 23€ </strong>
+              Nuit à partir de <strong> 23€ </strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: grey"></i>
             </p>
           </div>
 
@@ -140,7 +167,12 @@
             />
             <p>
               <strong> Hôtel chez Amina </strong> <br />
-              Nuit à partir de <strong> 96€ </strong>
+              Nuit à partir de <strong> 96€ </strong> <br />
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
+              <i class="fas fa-star" style="color: #0065fc"></i>
             </p>
           </div>
         </div>
@@ -148,7 +180,7 @@
       </section>
 
       <section id="locations2">
-        <h4>Les plus populaires</h4>
+        <h4>Les plus populaires <i class="fas fa-chart-line"></i></h4>
 
         <div class="imgconteneur2">
           <img
@@ -157,7 +189,12 @@
           />
           <p>
             <strong>Hôtel Le soleil du matin</strong> <br />
-            Nuit à partir de 128€
+            Nuit à partir de 128€ <br />
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
           </p>
         </div>
 
@@ -172,7 +209,12 @@
               Chambres d'hôtes
             </strong>
             <br />
-            Nuit à partir de 71€
+            Nuit à partir de 71€ <br />
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: grey"></i>
           </p>
         </div>
 
@@ -183,7 +225,12 @@
           />
           <p>
             <strong> Hôtel Tout bleu et Blanc </strong> <br />
-            Nuit à partir de 68€
+            Nuit à partir de 68€ <br />
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: #0065fc"></i>
+            <i class="fas fa-star" style="color: grey"></i>
           </p>
         </div>
       </section>
