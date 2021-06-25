@@ -13,15 +13,23 @@
 
   <body>
     <nav>
-      <div>
-        <h1>Reservia</h1>
-      </div>
-      <div id="menu">
-        <div id="menu-group-1">
-          <div><a href="#ancrehebergements">Hébergements</a></div>
-          <div><a href="#ancreactivites">Activités</a></div>
+      <div id="menu-main">
+        <div>
+          <h1>Reservia</h1>
         </div>
-        <div><strong> S'inscrire </strong></div>
+        <div id="menu">
+          <div class="menu-large">
+            <a href="#ancrehebergements">Hébergements</a>
+          </div>
+          <div class="menu-large"><a href="#ancreactivites">Activités</a></div>
+          <div class="inscription"><strong> S'inscrire </strong></div>
+        </div>
+      </div>
+      <div id="menu-second">
+        <div class="menu-small">
+          <a href="#ancrehebergements">Hébergements</a>
+        </div>
+        <div class="menu-small"><a href="#ancreactivites">Activités</a></div>
       </div>
     </nav>
 
@@ -32,7 +40,7 @@
       <form>
         <div class="recherche">
           <div class="place_icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="filter_text"><strong> Marseille, France </strong></div>
+          <div class="place_text"><strong> Marseille, France </strong></div>
           <div class="search_icon"><i class="fas fa-search"></i></div>
           <div class="search_text"><strong>Rechercher</strong></div>
         </div>
@@ -40,38 +48,42 @@
 
       <h4><strong>Filtres</strong></h4>
 
-      <div class="filter">
-        <div class="filter_icon">
-          <i class="fas fa-money-bill-wave"></i>
+      <div id="les_filtres">
+        <div class="filter">
+          <div class="filter_icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </div>
+          <div class="filter_text"><strong> Economique </strong></div>
         </div>
-        <div class="filter_text"><strong> Economique </strong></div>
+
+        <div class="filter">
+          <div class="filter_icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <div class="filter_text"><strong> Familial </strong></div>
+        </div>
+
+        <div class="filter">
+          <div class="filter_icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="filter_text"><strong> Romantique </strong></div>
+        </div>
+
+        <div class="filter">
+          <div class="filter_icon">
+            <i class="fas fa-dog"></i>
+          </div>
+          <div class="filter_text"><strong>Animaux autorisés </strong></div>
+        </div>
       </div>
 
-      <div class="filter">
-        <div class="filter_icon">
-          <i class="fas fa-child"></i>
+      <div class="info_text">
+        <div class="info_icon"><i class="fas fa-info"></i></div>
+        <div>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-        <div class="filter_text"><strong> Familial </strong></div>
       </div>
-
-      <div class="filter">
-        <div class="filter_icon">
-          <i class="fas fa-heart"></i>
-        </div>
-        <div class="filter_text"><strong> Romantique </strong></div>
-      </div>
-
-      <div class="filter">
-        <div class="filter_icon">
-          <i class="fas fa-dog"></i>
-        </div>
-        <div class="filter_text"><strong>Animaux autorisés </strong></div>
-      </div>
-
-      <p>
-        <i class="fas fa-info" style="color: #0065fc"></i>
-        Plus de 500 logements sont disponibles dans cette ville
-      </p>
     </header>
 
     <section id="hebergements">
@@ -180,7 +192,12 @@
       </section>
 
       <section id="locations2">
-        <h4>Les plus populaires <i class="fas fa-chart-line"></i></h4>
+        <div class="titre_populaire">
+          <div>
+            <h4>Les plus populaires</h4>
+          </div>
+          <div><i class="fas fa-chart-line"></i></div>
+        </div>
 
         <div class="imgconteneur2">
           <img
