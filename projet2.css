@@ -232,6 +232,8 @@ header {
   margin-right: 1%;
 }
 
+/*BEGIN HEBERGEMENTS A MARSEILLE*/
+
 @media screen and (max-width: 480px) {
   #hebergements {
     flex-direction: column-reverse;
@@ -263,7 +265,7 @@ header {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   #locations1 {
     display: flex;
     flex-direction: column;
@@ -281,7 +283,7 @@ header {
   align-content: space-between;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   #location1-card {
     display: flex;
     flex-direction: column;
@@ -301,7 +303,7 @@ header {
   background-color: white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   .imgconteneur1 {
     /* display: flex;
     flex-direction: column;
@@ -327,6 +329,8 @@ header {
 
   border-radius: 20px;
 }
+
+/*BEGIN HEBERGEMENTS POPULAIRES*/
 
 @media screen and (max-width: 480px) {
   #locations2 {
@@ -363,20 +367,7 @@ header {
   height: auto;
 }
 
-#ancreactivites {
-  margin-right: 2%;
-  margin-left: 2%;
-}
-
-@media screen and (max-width: 500px) {
-  #section3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-  }
-}
+/*BEGIN ACTIVITES*/
 
 #section3 {
   display: flex;
@@ -388,15 +379,25 @@ header {
   margin: 4%;
 }
 
-.imgconteneur31 {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 2px 2px 15px grey;
-  background-color: white;
-  height: 450px;
+.imgconteneur31 img {
+  width: 100%;
+  height: 90%;
 }
 
-@media screen and (max-width: 500px) {
+.imgconteneur32 img {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 480px) {
+  #section3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
   .imgconteneur31 {
     /* display: flex;
     flex-direction: column;
@@ -405,14 +406,7 @@ header {
     height: 12%;
     margin: 5%;
   }
-}
 
-.imgconteneur321 {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 500px) {
   .imgconteneur321 {
     /* display: flex;
     flex-direction: column;
@@ -420,6 +414,21 @@ header {
     width: 100%;
     margin: 5%;
   }
+}
+
+/* @media screen and (min-width: 480px) */
+
+.imgconteneur31 {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px grey;
+  background-color: white;
+  height: 450px;
+}
+
+.imgconteneur321 {
+  display: flex;
+  flex-direction: column;
 }
 
 .imgconteneur32 {
@@ -433,17 +442,9 @@ header {
   height: 210px;
 }
 
-.imgconteneur31 img {
-  width: 100%;
-  height: 90%;
-}
+/*BEGIN FOOTER*/
 
-.imgconteneur32 img {
-  width: 100%;
-  height: 80%;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -460,3 +461,5 @@ footer div {
   margin-left: 2%;
   margin-right: 10%;
 }
+
+/*END BODY*/
