@@ -133,7 +133,6 @@ header {
 
   color: black;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -159,7 +158,6 @@ header {
   border-radius: 15px;
 
   color: white;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -310,9 +308,6 @@ header {
 
 @media screen and (max-width: 480px) {
   .imgconteneur1 {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 100%;
   }
 }
@@ -382,87 +377,95 @@ header {
 /* BEGIN ACTIVITES */
 
 #section3-container {
+  height: 80vh;
+
   margin: 2.5em;
 }
 
 #section3 {
+  height: 90%;
+
   display: flex;
+  justify-content: space-between;
 }
 
 #section3 p {
+  font-size: 0.8em;
   margin: 4%;
 }
 
 .section3-card-container {
+  width: 23%;
+  height: 100%;
+
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(182, 180, 180);
   background-color: white;
-  height: auto;
   cursor: pointer;
-}
-
-.section3-card-container:hover {
-  transform: scale(1.02);
 }
 
 .section3-card-container img {
   width: 100%;
   height: 90%;
+
   object-fit: cover;
+}
+
+.imgconteneur321 {
+  width: 23%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgconteneur32 {
+  width: 100%;
+  height: 46%;
+
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgb(182, 180, 180);
+  background-color: white;
+  cursor: pointer;
 }
 
 .imgconteneur32 img {
   width: 100%;
   height: 80%;
+
   object-fit: cover;
 }
 
-.imgconteneur321 {
-  display: flex;
-  flex-direction: column;
-}
-
-.imgconteneur32 {
-  border-radius: 20px;
-  overflow: hidden;
-  /* margin-bottom: 2.5em;
-
-  margin-right: 2.5em;
-  margin-left: 2.5em; */
-  box-shadow: 1px 1px 10px rgb(182, 180, 180);
-  background-color: white;
-  height: 210px;
-  cursor: pointer;
-}
-
-.imgconteneur32:hover {
+.can-grow:hover {
   transform: scale(1.02);
 }
 
 @media screen and (max-width: 480px) {
   #section3 {
+    width: 100%;
+    height: 100%;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
   }
 
   .section3-card-container {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 100%;
     height: 12%;
   }
 
   .imgconteneur321 {
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; */
     width: 100%;
     margin: 5%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #section3-container {
   }
 }
 
@@ -475,8 +478,9 @@ footer {
 }
 
 footer div {
-  margin-left: 2%;
-  margin-right: 10%;
+  width: 30%;
+
+  margin: 2.5em;
 }
 
 @media screen and (max-width: 480px) {
