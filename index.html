@@ -19,17 +19,29 @@
         </div>
         <div id="menu">
           <div class="menu-large">
-            <a href="#ancrehebergements">Hébergements</a>
+            <a class="nav-link" href="#ancrehebergements" data-active="true"
+              >Hébergements</a
+            >
           </div>
-          <div class="menu-large"><a href="#ancreactivites">Activités</a></div>
+          <div class="menu-large">
+            <a class="nav-link" href="#ancreactivites" data-active="false"
+              >Activités</a
+            >
+          </div>
           <div class="inscription"><strong> S'inscrire </strong></div>
         </div>
       </div>
       <div id="menu-second">
         <div class="menu-small">
-          <a href="#ancrehebergements">Hébergements</a>
+          <a class="nav-link" href="#ancrehebergements" data-active="true"
+            >Hébergements</a
+          >
         </div>
-        <div class="menu-small"><a href="#ancreactivites">Activités</a></div>
+        <div class="menu-small">
+          <a class="nav-link" href="#ancreactivites" data-active="false"
+            >Activités</a
+          >
+        </div>
       </div>
     </nav>
 
@@ -40,15 +52,18 @@
       <form>
         <div class="recherche">
           <div class="place_icon"><i class="fas fa-map-marker-alt"></i></div>
-          <div class="place_text"><strong> Marseille, France </strong></div>
+          <div class="place_text">
+            <input type="search" value="Marseille, France" />
+          </div>
           <div class="search_icon"><i class="fas fa-search"></i></div>
           <div class="search_text"><strong>Rechercher</strong></div>
         </div>
       </form>
 
-      <h4><strong>Filtres</strong></h4>
-
       <div id="les_filtres">
+        <div id="les_filtres_title">
+          <h4><strong>Filtres</strong></h4>
+        </div>
         <div class="filter">
           <div class="filter_icon">
             <i class="fas fa-money-bill-wave"></i>
@@ -103,7 +118,7 @@
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
-              <i class="fas fa-star" style="color: grey"></i>
+              <i class="fas fa-star" style="color: #cfcccc"></i>
             </p>
           </div>
 
@@ -136,7 +151,7 @@
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
-              <i class="fas fa-star" style="color: grey"></i>
+              <i class="fas fa-star" style="color: #cfcccc"></i>
             </p>
           </div>
 
@@ -151,8 +166,8 @@
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
-              <i class="fas fa-star" style="color: grey"></i>
-              <i class="fas fa-star" style="color: grey"></i>
+              <i class="fas fa-star" style="color: #cfcccc"></i>
+              <i class="fas fa-star" style="color: #cfcccc"></i>
             </p>
           </div>
 
@@ -168,7 +183,7 @@
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
               <i class="fas fa-star" style="color: #0065fc"></i>
-              <i class="fas fa-star" style="color: grey"></i>
+              <i class="fas fa-star" style="color: #cfcccc"></i>
             </p>
           </div>
 
@@ -231,7 +246,7 @@
             <i class="fas fa-star" style="color: #0065fc"></i>
             <i class="fas fa-star" style="color: #0065fc"></i>
             <i class="fas fa-star" style="color: #0065fc"></i>
-            <i class="fas fa-star" style="color: grey"></i>
+            <i class="fas fa-star" style="color: #cfcccc"></i>
           </p>
         </div>
 
@@ -247,17 +262,17 @@
             <i class="fas fa-star" style="color: #0065fc"></i>
             <i class="fas fa-star" style="color: #0065fc"></i>
             <i class="fas fa-star" style="color: #0065fc"></i>
-            <i class="fas fa-star" style="color: grey"></i>
+            <i class="fas fa-star" style="color: #cfcccc"></i>
           </p>
         </div>
       </section>
     </section>
 
     <section id="section3-container">
-      <h4>Activités à Marseille</h4>
+      <h4 id="ancreactivites">Activités à Marseille</h4>
 
       <div id="section3">
-        <div class="section3-card-container can-grow">
+        <div class="section3-card-container1 can-grow">
           <img
             src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
             alt="renolaithienne"
@@ -265,8 +280,8 @@
           <p><strong>Vieux Port</strong></p>
         </div>
 
-        <div class="imgconteneur321">
-          <div class="imgconteneur32 can-grow">
+        <div class="section3-card-containeur2">
+          <div class="section3-card-containeur21 can-grow">
             <img
               src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="paulhermann"
@@ -274,7 +289,7 @@
             <p><strong>Fort de Pomègues</strong></p>
           </div>
 
-          <div class="imgconteneur32 can-grow">
+          <div class="section3-card-containeur21 can-grow">
             <img
               src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
               alt="kevinhikari"
@@ -283,7 +298,7 @@
           </div>
         </div>
 
-        <div class="section3-card-container can-grow">
+        <div class="section3-card-container1 can-grow">
           <img
             src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             alt="kilyansockalingum"
@@ -291,8 +306,8 @@
           <p><strong>Parc National des Calanques</strong></p>
         </div>
 
-        <div class="imgconteneur321">
-          <div class="imgconteneur32 can-grow">
+        <div class="section3-card-containeur2">
+          <div class="section3-card-containeur21 can-grow">
             <img
               src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
               alt="florianwehde"
@@ -300,7 +315,7 @@
             <p><strong>Notre-Dame-de-la-Garde</strong></p>
           </div>
 
-          <div class="imgconteneur32 can-grow">
+          <div class="section3-card-containeur21 can-grow">
             <img
               src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
               alt="lenapaulin"
