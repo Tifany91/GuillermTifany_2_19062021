@@ -56,15 +56,15 @@ nav a:visited {
     border-top: 6px solid transparent;
   }
 
-  #menu div[data-active="true"] a {
+  .menu-large[data-active="true"] a {
     color: #0065fc;
   }
 
-  #menu div[data-active="true"] {
+  .menu-large[data-active="true"] {
     border-top: 6px solid #0065fc;
   }
 
-  #menu div[data-active="false"] {
+  .menu-large[data-active="false"] {
     border-top: 6px solid transparent;
   }
 
@@ -105,14 +105,18 @@ nav a:visited {
     padding-right: 3em;
   }
 
-  #menu-second {
-    border-bottom: 3px solid #f2f2f2;
+  .menu-small[data-active="true"] a {
+    color: #0065fc;
+  }
+
+  .menu-small[data-active="true"] {
+    border-bottom: 3px solid #0065fc;
     padding-bottom: 1em;
   }
 
-  .nav-link[data-active="true"] {
-    border-bottom: 3px solid #0065fc;
-    color: #0065fc;
+  .menu-small[data-active="false"] {
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 1em;
   }
 }
 
@@ -167,9 +171,13 @@ nav a:visited {
   #les_filtres_title {
     width: 100%;
   }
+
+  .filter {
+    margin: 0.5em 0.5em 0.5em 0;
+  }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   #les_filtres {
     display: flex;
     align-items: center;
@@ -179,6 +187,28 @@ nav a:visited {
 
   #les_filtres_title {
     margin-right: 2.5em;
+  }
+
+  .filter {
+    margin: 0.5em 2em 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  #les_filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
+
+  #les_filtres_title {
+    margin-right: 2.5em;
+  }
+
+  .filter {
+    margin: 0.5em 0.5em 0.5em 2em;
   }
 }
 
@@ -251,7 +281,6 @@ input {
   display: inline-flex;
   cursor: pointer;
   font-size: 1em;
-  margin: 0.5em 0.5em 0.5em 0;
 }
 
 .filter_icon {
@@ -303,7 +332,7 @@ input {
 
 #hebergements p {
   margin-left: 1em;
-  line-height: 130%;
+  margin-top: 3%;
 }
 
 #locations1 {
@@ -318,6 +347,7 @@ input {
 
   #locations2 {
     padding: 1em;
+    flex-direction: column;
   }
 
   #locations1 {
@@ -330,7 +360,36 @@ input {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  #hebergements {
+    flex-direction: column-reverse;
+    margin: 1.5em;
+  }
+
+  #hebergements p {
+    font-size: 1.3em;
+  }
+
+  #locations1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 20px;
+    padding: 1.5em;
+  }
+
+  #locations2 {
+    flex-wrap: wrap;
+    padding: 1em;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #hebergements {
     flex-direction: row;
     justify-content: space-between;
@@ -345,6 +404,8 @@ input {
   #locations2 {
     padding: 20px;
     border-radius: 20px;
+    flex-direction: column;
+    width: 23%;
   }
 }
 
@@ -387,6 +448,21 @@ input {
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .imgconteneur1 {
+    width: 350px;
+    height: 230px;
+  }
+
+  .titre_populaire {
+    width: 100%;
+  }
+
+  .imgconteneur2 {
+    height: 150px;
+  }
+}
+
 .imgconteneur1 img {
   width: 100%;
   height: 55%;
@@ -395,11 +471,6 @@ input {
 
 #locations2 {
   display: flex;
-
-  flex-direction: column;
-
-  width: 23%;
-
   background-color: #f2f2f2;
 }
 
@@ -412,6 +483,16 @@ input {
     flex-wrap: wrap;
     width: 100%;
   }
+
+  .imgconteneur2 {
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .imgconteneur2 {
+    height: 120px;
+  }
 }
 
 .titre_populaire {
@@ -423,8 +504,6 @@ input {
 .imgconteneur2 {
   display: flex;
   overflow: hidden;
-
-  height: 120px;
 
   margin-bottom: 40px;
 
@@ -468,7 +547,26 @@ input {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  #section3-container {
+    height: auto;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    /* margin-right: 1em; */
+  }
+
+  #section3-container img {
+    height: 150px;
+  }
+
+  .section3-card-container1,
+  .section3-card-containeur21 {
+    width: 50%;
+    margin-bottom: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   #section3-container {
     height: 80vh;
 
@@ -497,6 +595,7 @@ input {
 
   .section3-card-containeur21 {
     height: 46%;
+    width: 100%;
   }
 
   .section3-card-containeur21 img {
@@ -532,8 +631,6 @@ input {
 }
 
 .section3-card-containeur21 {
-  width: 100%;
-
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(182, 180, 180);
