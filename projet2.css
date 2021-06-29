@@ -554,6 +554,11 @@ input {
     margin-left: 1em;
     /* margin-right: 1em; */
   }
+  #section3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   #section3-container img {
     height: 150px;
