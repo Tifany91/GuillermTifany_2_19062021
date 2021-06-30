@@ -228,7 +228,7 @@ nav a:visited {
 input {
   border: 0px;
   font-size: 1.2em;
-  width: 10m;
+  width: 100%;
 }
 
 .place_icon {
@@ -435,7 +435,6 @@ input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
   }
 }
 
@@ -450,6 +449,9 @@ input {
   background-color: white;
   cursor: pointer;
   line-height: 1.2;
+
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .imgconteneur1:hover {
@@ -536,6 +538,9 @@ input {
   background-color: white;
   cursor: pointer;
   line-height: 1.2;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .imgconteneur2:hover {
@@ -546,6 +551,14 @@ input {
   width: 40%;
   height: auto;
   object-fit: cover;
+}
+
+.imgconteneur2-description {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5em;
 }
 
 /* BEGIN ACTIVITES */
