@@ -20,7 +20,6 @@ nav a:visited {
 }
 
 #menu-main {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,6 @@ nav a:visited {
 }
 
 #menu {
-  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +43,9 @@ nav a:visited {
 
 @media screen and (min-width: 480px) {
   nav {
-    margin: 0 2.5em 2.5em 2.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 1.5em;
     height: 15vh;
     display: flex;
     flex-direction: column;
@@ -89,10 +89,7 @@ nav a:visited {
   nav {
     margin-right: 1em;
     margin-left: 1em;
-  }
-
-  #menu {
-    width: auto;
+    margin-bottom: 1em;
   }
 
   .menu-large {
@@ -130,6 +127,7 @@ nav a:visited {
 
   header h3 {
     font-size: 1.5em;
+    margin: 0%;
   }
 
   .recherche {
@@ -149,7 +147,7 @@ nav a:visited {
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   h3 {
     font-size: 2em;
-    margin-top: -1em;
+    margin: 0%;
   }
 }
 
@@ -347,12 +345,12 @@ input {
 
 #locations1 {
   background-color: #f2f2f2;
-  width: 68%;
 }
 
 @media screen and (max-width: 480px) {
   #hebergements {
     flex-direction: column-reverse;
+    margin: 1em;
   }
 
   #hebergements h4 {
@@ -368,7 +366,6 @@ input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     background-color: white;
     padding: 1em;
   }
@@ -378,8 +375,8 @@ input {
   #hebergements {
     flex-direction: column-reverse;
     margin: 2.5em;
-    width: 100%;
   }
+
   #hebergements h4 {
     font-size: 1.6em;
   }
@@ -391,7 +388,6 @@ input {
   #locations1 {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     border-radius: 20px;
     padding: 1.5em;
   }
@@ -400,7 +396,6 @@ input {
     flex-wrap: wrap;
     padding: 1.5em;
     display: flex;
-    width: 100%;
     flex-direction: row;
     border-radius: 20px;
     margin-bottom: 1.5em;
@@ -415,6 +410,7 @@ input {
   }
 
   #locations1 {
+    width: 68%;
     padding: 20px;
     border-radius: 20px;
   }
@@ -496,16 +492,11 @@ input {
 
 /*BEGIN HEBERGEMENTS POPULAIRES*/
 
-#locations2 i {
-  margin-top: 1.4em;
-}
-
 @media screen and (max-width: 480px) {
   #locations2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
   }
 
   .imgconteneur2 {
@@ -524,6 +515,12 @@ input {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+#titre_populaire__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .imgconteneur2 {
@@ -567,6 +564,7 @@ input {
 
     margin-top: 1.5em;
     margin-left: 1em;
+    margin-right: 1em;
   }
 
   #section3-container img {
@@ -587,11 +585,9 @@ input {
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   #section3-container {
     margin: 2.5em;
-    width: 100%;
   }
 
   #section3 {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
