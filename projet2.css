@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 /* BEGIN NAV */
 
 nav a {
@@ -46,7 +50,7 @@ nav a:visited {
     margin-left: 2.5em;
     margin-right: 2.5em;
     margin-bottom: 1.5em;
-    height: 15vh;
+    height: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,7 +129,7 @@ nav a:visited {
     margin-left: 1em;
   }
 
-  header h3 {
+  header h1 {
     font-size: 1.5em;
     margin: 0%;
   }
@@ -145,7 +149,7 @@ nav a:visited {
 }
 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
-  h3 {
+  h1 {
     font-size: 2em;
     margin: 0%;
   }
@@ -253,10 +257,11 @@ input {
 }
 
 .filter_text {
+  font-weight: bold;
   display: flex;
   align-items: center;
   margin-left: 0.5em;
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 
 .search_icon {
@@ -284,6 +289,10 @@ input {
   align-items: center;
 }
 
+#les_filtres_title {
+  font-weight: bold;
+}
+
 .filter {
   border: 2px solid rgb(180, 178, 178);
   border-radius: 30px;
@@ -293,8 +302,8 @@ input {
 }
 
 .filter_icon {
-  width: 3.5em;
-  height: 3.5em;
+  width: 3.4em;
+  height: 3.4em;
   background: #deebff;
   border-radius: 50%;
 
@@ -310,6 +319,7 @@ input {
 .filter:hover {
   transform: scale(1.02);
   background-color: #deebff;
+  transition: all 1s;
 }
 
 .info_text {
@@ -322,7 +332,7 @@ input {
   height: 1.5em;
   min-height: 1.5rem;
   min-width: 1.5rem;
-  border: 1px solid grey;
+  border: 1px solid #80808052;
   border-radius: 50%;
 
   color: #0065fc;
@@ -339,26 +349,38 @@ input {
   display: flex;
 }
 
+#hebergements h3 {
+  font-size: 0.9em;
+}
+
 #hebergements p {
-  margin: 0.5em;
+  font-size: 0.8em;
+}
+
+#hebergements strong {
+  font-weight: bold;
 }
 
 #locations1 {
   background-color: #f2f2f2;
 }
 
+#text-affichage {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 @media screen and (max-width: 480px) {
   #hebergements {
     flex-direction: column-reverse;
-    margin: 1em;
   }
 
-  #hebergements h4 {
-    font-size: 1.6em;
+  #hebergements h2 {
+    font-size: 1.5em;
   }
 
   #locations2 {
-    padding: 1em;
+    padding: 1.5em;
     flex-direction: column;
   }
 
@@ -377,7 +399,7 @@ input {
     margin: 2.5em;
   }
 
-  #hebergements h4 {
+  #hebergements h2 {
     font-size: 1.6em;
   }
 
@@ -410,16 +432,17 @@ input {
   }
 
   #locations1 {
-    width: 68%;
-    padding: 20px;
+    width: 60%;
+    padding: 2.5em;
     border-radius: 20px;
   }
 
   #locations2 {
     padding: 20px;
-    border-radius: 20px;
+    padding: 2.5em;
     flex-direction: column;
-    width: 23%;
+    width: 25%;
+    border-radius: 20px;
   }
 }
 
@@ -444,8 +467,8 @@ input {
   border-radius: 20px;
   overflow: hidden;
   border: 2px solid white;
-  margin-bottom: 40px;
-  box-shadow: 1px 1px 10px rgb(182, 180, 180);
+  margin-bottom: 2.5em;
+  box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
   background-color: white;
   cursor: pointer;
   line-height: 1.2;
@@ -456,6 +479,7 @@ input {
 
 .imgconteneur1:hover {
   transform: scale(1.02);
+  transition: all 1s;
 }
 
 @media screen and (max-width: 480px) {
@@ -504,7 +528,6 @@ input {
 
   .imgconteneur2 {
     height: 130px;
-    font-size: 1.2em;
   }
 }
 
@@ -520,21 +543,22 @@ input {
   align-content: center;
 }
 
-#titre_populaire__icon {
+#titre_populaire_icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .imgconteneur2 {
   display: flex;
   overflow: hidden;
 
-  margin-bottom: 40px;
+  margin-bottom: 2.5em;
 
   border: 2px solid white;
   border-radius: 20px;
-  box-shadow: 1px 1px 10px rgb(182, 180, 180);
+  box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
 
   background-color: white;
   cursor: pointer;
@@ -546,6 +570,7 @@ input {
 
 .imgconteneur2:hover {
   transform: scale(1.02);
+  transition: all 1s;
 }
 
 .imgconteneur2 img {
@@ -564,12 +589,18 @@ input {
 
 /* BEGIN ACTIVITES */
 
+#section3 h3 {
+  font-size: 0.9em;
+  margin-left: 1.5em;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 480px) {
-  #section3 p {
+  /* #section3 h3 {
     font-size: 0.8em;
     margin: 4%;
-  }
-  #section3-container h4 {
+  } */
+  #section3-container h2 {
     font-size: 1.6em;
   }
 
@@ -607,14 +638,14 @@ input {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  #section3-container h4 {
+  #section3-container h2 {
     font-size: 1.6em;
   }
 
-  #section3 p {
+  /* #section3 h3 {
     margin-left: 1.5em;
     vertical-align: middle;
-  }
+  } */
 
   .section3-card-container1,
   .section3-card-containeur2 {
@@ -657,10 +688,10 @@ input {
     justify-content: space-between;
   }
 
-  #section3 p {
+  /* #section3 h3 {
     font-size: 0.8em;
-    margin: 4%;
-  }
+    margin: 1.5em;
+  } */
 
   .section3-card-container1 {
     width: 23%;
@@ -686,10 +717,14 @@ input {
   }
 }
 
+.section3-containeur h3 {
+  font-weight: bold;
+}
+
 .section3-card-container1 {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 10px rgb(182, 180, 180);
+  box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
   background-color: white;
   cursor: pointer;
 }
@@ -709,7 +744,7 @@ input {
 .section3-card-containeur21 {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 1px 1px 10px rgb(182, 180, 180);
+  box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
   background-color: white;
   cursor: pointer;
 }
@@ -722,6 +757,7 @@ input {
 
 .can-grow:hover {
   transform: scale(1.02);
+  transition: all 1s;
 }
 
 /*BEGIN FOOTER*/
@@ -730,6 +766,10 @@ footer {
   display: flex;
   justify-content: start;
   background-color: #f2f2f2;
+}
+
+#titre_footer {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 480px) {
