@@ -335,7 +335,7 @@ input {
 .filter:hover {
   transform: scale(1.02);
   background-color: #deebff;
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .info_text {
@@ -401,7 +401,7 @@ h2 {
   }
 
   #locations2 {
-    padding: 1.5em;
+    padding: 1em;
     flex-direction: column;
   }
 
@@ -519,7 +519,7 @@ h2 {
 
 .imgconteneur1:hover {
   transform: scale(1.02);
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 @media screen and (max-width: 480px) {
@@ -612,7 +612,7 @@ h2 {
 
 .imgconteneur2:hover {
   transform: scale(1.02);
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .imgconteneur2 img {
@@ -804,7 +804,7 @@ h2 {
 
 .can-grow:hover {
   transform: scale(1.02);
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 /*BEGIN FOOTER*/
