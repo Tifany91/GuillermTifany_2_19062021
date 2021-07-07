@@ -1,12 +1,17 @@
 /* BEGIN GLOBAL */
 @font-face {
-  font-family: "Raleway-Regular";
+  font-family: "Raleway";
   src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway_bold";
+  src: url("fonts/Raleway-Bold.ttf");
 }
 
 /* BEGIN BODY */
 body {
-  font-family: Raleway-Regular;
+  font-family: Raleway;
   margin: 0;
 }
 
@@ -93,6 +98,11 @@ nav a:visited {
     margin-bottom: 1em;
   }
 
+  #menu-main {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+
   .menu-large {
     display: none;
   }
@@ -101,6 +111,7 @@ nav a:visited {
     display: flex;
     padding-left: 3em;
     padding-right: 3em;
+    text-align: center;
   }
 
   .menu-small[data-active="true"] a {
@@ -110,11 +121,13 @@ nav a:visited {
   .menu-small[data-active="true"] {
     border-bottom: 3px solid #0065fc;
     padding-bottom: 1em;
+    width: 50%;
   }
 
   .menu-small[data-active="false"] {
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 1em;
+    width: 50%;
   }
 }
 
@@ -211,7 +224,7 @@ header p {
   }
 
   #les_filtres_title {
-    margin-right: 2em;
+    margin-right: 1.5em;
   }
 
   .filter {
@@ -272,8 +285,12 @@ input {
   margin-right: 0.5em;
 }
 
+input {
+  font-family: Raleway_bold;
+}
+
 .filter_text {
-  font-weight: bold;
+  font-family: Raleway_bold;
   display: flex;
   align-items: center;
   margin-left: 0.5em;
@@ -306,7 +323,7 @@ input {
 }
 
 #les_filtres_title {
-  font-weight: bold;
+  font-family: Raleway_bold;
 }
 
 .filter {
@@ -367,19 +384,21 @@ input {
 }
 
 h2 {
-  font-weight: bold;
+  font-family: Raleway_bold;
+}
+
+#locations1 img {
+  border-radius: 20px 20px 0 0;
+  padding: 0.2em;
 }
 
 #hebergements h3 {
   font-size: 0.9em;
+  font-family: Raleway_bold;
 }
 
 #hebergements p {
   font-size: 0.8em;
-}
-
-#hebergements strong {
-  font-weight: bold;
 }
 
 #locations1 {
@@ -387,7 +406,7 @@ h2 {
 }
 
 #text-affichage {
-  font-weight: bold;
+  font-family: Raleway_bold;
   font-size: 1.1em;
 }
 
@@ -401,7 +420,7 @@ h2 {
   }
 
   #locations2 {
-    padding: 1em;
+    padding: 1.5em;
     flex-direction: column;
   }
 
@@ -410,7 +429,7 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
   }
 
   #location1-card {
@@ -423,15 +442,11 @@ h2 {
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   #hebergements {
     flex-direction: column-reverse;
-    margin: 2em 2.5em 2em 2.5em;
+    margin: 2.5em;
   }
 
   #hebergements h2 {
     font-size: 1.6em;
-  }
-
-  #hebergements p {
-    font-size: 1.3em;
   }
 
   #locations1 {
@@ -455,11 +470,10 @@ h2 {
   #hebergements {
     flex-direction: row;
     justify-content: space-between;
-    margin: 2em 2.5em 2em 2.5em;
+    margin: 2.5em;
   }
 
   h2 {
-    font-weight: bold;
     margin-top: 0em;
   }
 
@@ -506,7 +520,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   height: 35%;
-  margin: 0.5em;
+  margin: 0 0 0.5em 0.5em;
 }
 
 .imgconteneur1-description h3 {
@@ -525,7 +539,7 @@ h2 {
 @media screen and (max-width: 480px) {
   .imgconteneur1 {
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 1em;
   }
 }
@@ -561,6 +575,11 @@ h2 {
 
 /*BEGIN HEBERGEMENTS POPULAIRES*/
 
+#locations2 img {
+  border-radius: 20px 0 0 20px;
+  padding: 0.2em;
+}
+
 @media screen and (max-width: 480px) {
   #locations2 {
     display: flex;
@@ -569,8 +588,13 @@ h2 {
   }
 
   .imgconteneur2 {
-    height: 130px;
+    height: 140px;
     margin-bottom: 1em;
+    font-size: 1.3em;
+  }
+
+  .imgconteneur2-description {
+    margin: 0.8em 0 0 0.8em;
   }
 }
 
@@ -578,6 +602,10 @@ h2 {
   .imgconteneur2 {
     height: 120px;
     margin-bottom: 2.5em;
+  }
+
+  .imgconteneur2-description {
+    margin: 0.7em;
   }
 }
 
@@ -626,7 +654,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0.5em;
 }
 
 .imgconteneur2-description h3 {
@@ -640,8 +667,8 @@ h2 {
 /* BEGIN ACTIVITES */
 
 #section3 h3 {
-  font-size: 0.9em;
   margin-left: 1.5em;
+  font-family: Raleway_bold;
 }
 
 .nom_activite {
@@ -655,12 +682,16 @@ h2 {
     font-size: 1.6em;
   }
 
+  #section-container h3 {
+    font-size: 1.3em;
+  }
+
   #section3-container {
     height: auto;
 
     margin-top: 1.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 
   #section3-container img {
@@ -764,10 +795,6 @@ h2 {
   }
 }
 
-.section3-containeur h3 {
-  font-weight: bold;
-}
-
 .section3-card-container1 {
   border-radius: 20px;
   overflow: hidden;
@@ -815,8 +842,8 @@ footer {
   background-color: #f2f2f2;
 }
 
-#titre_footer {
-  font-weight: bold;
+.titre_footer {
+  font-family: Raleway_bold;
 }
 
 footer p {
@@ -827,7 +854,7 @@ footer p {
   footer div {
     width: 65%;
 
-    margin: 2.5em;
+    margin: 1.5em 0 2.5em 2.5em;
   }
 }
 
@@ -837,6 +864,6 @@ footer p {
     flex-direction: column;
   }
   footer div {
-    margin: 1em;
+    margin: 1.5em;
   }
 }
