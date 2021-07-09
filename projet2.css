@@ -15,6 +15,12 @@ body {
   margin: 0;
 }
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* BEGIN NAV */
 
 nav a {
@@ -223,16 +229,16 @@ header p {
     margin-bottom: 2em;
   }
 
-  #les_filtres_title {
+  /* #les_filtres_title {
     margin-right: 1.5em;
-  }
+  } */
 
   .filter {
-    margin: 0.5em 2em 0.5em 0;
+    margin: 0.5em 1em 0.5em 1em;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   #les_filtres {
     display: flex;
     flex-wrap: wrap;
@@ -241,12 +247,8 @@ header p {
     margin-bottom: 2em;
   }
 
-  #les_filtres_title {
-    margin-right: 2.5em;
-  }
-
   .filter {
-    margin: 0.5em 0.5em 0.5em 2em;
+    margin: 0.5em 1em 0.5em 1em;
   }
 }
 
@@ -293,8 +295,8 @@ input {
   font-family: Raleway_bold;
   display: flex;
   align-items: center;
-  margin-left: 0.5em;
-  margin-right: 1.5em;
+  margin-left: 0.6em;
+  margin-right: 1.3em;
 }
 
 .search_icon {
@@ -437,6 +439,11 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  #locations1 i {
+    font-size: 0.6em;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
@@ -453,16 +460,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     border-radius: 20px;
-    padding: 1.5em;
-  }
-
-  #locations2 {
-    flex-wrap: wrap;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
-    margin-bottom: 1.5em;
+    padding: 2.5em;
   }
 }
 
@@ -492,7 +490,7 @@ h2 {
   }
 
   .imgconteneur1 {
-    margin-bottom: 2.5em;
+    margin: 0 0 2.5em 0;
   }
 }
 
@@ -513,6 +511,7 @@ h2 {
   background-color: white;
   cursor: pointer;
   line-height: 1.2;
+  /* margin: 0; */
 }
 
 .imgconteneur1-description {
@@ -539,8 +538,8 @@ h2 {
 @media screen and (max-width: 480px) {
   .imgconteneur1 {
     width: 100%;
-    font-size: 1.3em;
-    margin-bottom: 1em;
+    font-size: 1.2em;
+    margin: 0 0 1em 0;
   }
 }
 
@@ -548,17 +547,8 @@ h2 {
   .imgconteneur1 {
     width: 100%;
     height: 250px;
-    margin-bottom: 2em;
-  }
-
-  .titre_populaire {
-    width: 100%;
-  }
-
-  .imgconteneur2 {
-    height: 150px;
-    width: 100%;
-    margin-bottom: 2em;
+    margin: 0 0 2em 0;
+    font-size: 1.4em;
   }
 }
 
@@ -589,8 +579,38 @@ h2 {
 
   .imgconteneur2 {
     height: 140px;
-    margin-bottom: 1em;
-    font-size: 1.3em;
+    margin: 0 0 1em 0;
+    font-size: 1.2em;
+  }
+
+  .imgconteneur2 i {
+    font-size: 0.6em;
+  }
+
+  .imgconteneur2-description {
+    margin: 0.8em 0 0 0.8em;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  #locations2 {
+    flex-wrap: wrap;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 1.5em;
+  }
+
+  .titre_populaire {
+    width: 100%;
+  }
+
+  .imgconteneur2 {
+    height: 150px;
+    width: 100%;
+    margin: 0 0 2em 0;
+    font-size: 1.4em;
   }
 
   .imgconteneur2-description {
@@ -600,12 +620,16 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .imgconteneur2 {
-    height: 120px;
-    margin-bottom: 2.5em;
+    height: 125px;
+    margin: 0 0 2.5em 0;
   }
 
   .imgconteneur2-description {
     margin: 0.7em;
+  }
+
+  #titre_populaire_icon {
+    margin: 0 0 13px 0;
   }
 }
 
@@ -682,8 +706,8 @@ h2 {
     font-size: 1.6em;
   }
 
-  #section-container h3 {
-    font-size: 1.3em;
+  #section3-container h3 {
+    font-size: 1em;
   }
 
   #section3-container {
@@ -701,7 +725,7 @@ h2 {
   .section3-card-container1,
   .section3-card-containeur21 {
     width: 100%;
-    margin-bottom: 2.5em;
+    margin: 0 0 1em 0;
   }
 
   .section3-card-containeur2 {
@@ -725,9 +749,18 @@ h2 {
     font-size: 1.6em;
   }
 
+  #section3 h3 {
+    margin-top: 0.8em;
+  }
+
   .section3-card-container1,
   .section3-card-containeur2 {
-    height: 40vh;
+    height: 65vh;
+  }
+
+  .section3-card-container1,
+  .section3-card-containeur21 {
+    margin: 0;
   }
 
   .section3-card-container1 {
@@ -774,6 +807,11 @@ h2 {
   .section3-card-container1 {
     width: 23%;
     height: 100%;
+  }
+
+  .section3-card-container1,
+  .section3-card-containeur21 {
+    margin: 0;
   }
 
   .section3-card-container1 img {
