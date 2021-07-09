@@ -115,9 +115,13 @@ nav a:visited {
 
   .menu-small {
     display: flex;
-    padding-left: 3em;
-    padding-right: 3em;
-    text-align: center;
+    width: 50%;
+  }
+
+  .menu-small a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-small[data-active="true"] a {
@@ -127,13 +131,11 @@ nav a:visited {
   .menu-small[data-active="true"] {
     border-bottom: 3px solid #0065fc;
     padding-bottom: 1em;
-    width: 50%;
   }
 
   .menu-small[data-active="false"] {
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 1em;
-    width: 50%;
   }
 }
 
@@ -558,12 +560,12 @@ h2 {
   object-fit: cover;
 }
 
+/*BEGIN HEBERGEMENTS POPULAIRES*/
+
 #locations2 {
   display: flex;
   background-color: #f2f2f2;
 }
-
-/*BEGIN HEBERGEMENTS POPULAIRES*/
 
 #locations2 img {
   border-radius: 20px 0 0 20px;
