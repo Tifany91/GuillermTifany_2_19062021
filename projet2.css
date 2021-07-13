@@ -731,18 +731,18 @@ h2 {
     margin-right: 1.5em;
   }
 
-  #section3-container img {
+  #section3-container .section3-img-container {
     height: 150px;
   }
 
   .section3-card-container1,
   .section3-card-containeur21 {
     width: 100%;
-    margin: 0 0 1em 0;
+    margin: 0 0 1.5em 0;
   }
 
   .section3-card-containeur2 {
-    height: 100%;
+    gap: 0;
   }
 }
 
@@ -806,7 +806,7 @@ h2 {
   #section3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80vh;
+    grid-template-rows: 70vh;
     grid-gap: 2.5em;
   }
 
@@ -819,6 +819,10 @@ h2 {
   .section3-card-containeur2 {
     width: 100%;
     height: 100%;
+  }
+
+  .section3-card-containeur2 {
+    gap: 2.5em;
   }
 }
 
@@ -842,7 +846,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2.5em;
 }
 
 .section3-card-containeur21 {
@@ -855,11 +858,12 @@ h2 {
   cursor: pointer;
 }
 
-.card-1-1 {
-  height: 60%;
+.section3-card-containeur21 .section3-img-container {
+  height: 100%;
+  position: relative;
 }
 
-.section3-card-containeur21 .section3-img-container {
+.section3-card-container1 .section3-img-container {
   height: 100%;
   position: relative;
 }
@@ -870,13 +874,23 @@ h2 {
   height: 100%;
 }
 
+.section3-card-container1 .section3-img-container img {
+  display: block;
+  position: absolute;
+  height: 100%;
+}
+
+.card-1-1 {
+  height: 55%;
+}
+
 .card-1-2 {
-  height: 30%;
+  height: 39%;
 }
 
 .card-2-1,
 .card-2-2 {
-  height: 45%;
+  height: 47%;
 }
 
 .section3-card-containeur21 img {
