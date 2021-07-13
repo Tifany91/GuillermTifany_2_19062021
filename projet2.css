@@ -57,19 +57,25 @@ nav a:visited {
   nav {
     margin-left: 2.5em;
     margin-right: 2.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
     height: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  nav img {
+    margin-top: 2.5em;
+  }
+
   .inscription {
     border-top: 6px solid transparent;
+    margin-top: 2.5em;
   }
 
   .menu-large[data-active="true"] a {
     color: #0065fc;
+    margin-top: 2.5em;
   }
 
   .menu-large[data-active="true"] {
@@ -78,6 +84,7 @@ nav a:visited {
 
   .menu-large[data-active="false"] {
     border-top: 6px solid transparent;
+    margin-top: 2.5em;
   }
 
   #menu {
@@ -318,6 +325,7 @@ input {
   border-radius: 0px 15px 15px 0px;
 
   color: white;
+  font-family: Raleway_bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -362,10 +370,10 @@ input {
 }
 
 .info_icon {
-  width: 1.5em;
-  height: 1.5em;
-  min-height: 1.5rem;
-  min-width: 1.5rem;
+  width: 1.4em;
+  height: 1.4em;
+  min-height: 1.4rem;
+  min-width: 1.4rem;
   border: 1px solid #80808052;
   border-radius: 50%;
 
@@ -374,8 +382,8 @@ input {
   justify-content: center;
   align-items: center;
 
-  margin-right: 1em;
-  margin-bottom: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 1.4em;
 }
 
 /*BEGIN HEBERGEMENTS A MARSEILLE*/
@@ -403,6 +411,10 @@ h2 {
 
 #locations1 {
   background-color: #f2f2f2;
+}
+
+#locations1 i {
+  margin: -0.1em;
 }
 
 #text-affichage {
@@ -499,7 +511,7 @@ h2 {
 }
 
 .imgconteneur1 {
-  width: 30%;
+  width: 29%;
   height: 190px;
   border-radius: 20px;
   overflow: hidden;
@@ -565,6 +577,10 @@ h2 {
 #locations2 img {
   border-radius: 20px 0 0 20px;
   padding: 0.2em;
+}
+
+.imgconteneur2 i {
+  margin-right: -0.3em;
 }
 
 @media screen and (max-width: 480px) {
@@ -784,53 +800,31 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   #section3-container {
-    height: 80vh;
-
-    margin: 2.5em;
+    padding: 2.5em;
   }
 
   #section3 {
-    height: 90%;
-
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80vh;
+    grid-gap: 2.5em;
   }
 
   #section3 h3 {
-    font-size: 0.9em;
+    font-size: 1em;
     margin-top: 0.7em;
   }
 
-  .section3-card-container1 {
-    width: 23%;
-    height: 100%;
-  }
-
   .section3-card-container1,
-  .section3-card-containeur21 {
-    margin: 0;
-  }
-
-  .section3-card-container1 img {
-    height: 88%;
-  }
-
   .section3-card-containeur2 {
-    height: 100%;
-    width: 23%;
-  }
-
-  .section3-card-containeur21 {
-    height: 46%;
     width: 100%;
-  }
-
-  .section3-card-containeur21 img {
-    height: 75%;
+    height: 100%;
   }
 }
 
 .section3-card-container1 {
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
@@ -840,7 +834,7 @@ h2 {
 
 .section3-card-container1 img {
   width: 100%;
-
+  height: 100%;
   object-fit: cover;
 }
 
@@ -848,9 +842,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2.5em;
 }
 
 .section3-card-containeur21 {
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(182, 180, 180, 27%);
@@ -858,9 +855,33 @@ h2 {
   cursor: pointer;
 }
 
+.card-1-1 {
+  height: 60%;
+}
+
+.section3-card-containeur21 .section3-img-container {
+  height: 100%;
+  position: relative;
+}
+
+.section3-card-containeur21 .section3-img-container img {
+  display: block;
+  position: absolute;
+  height: 100%;
+}
+
+.card-1-2 {
+  height: 30%;
+}
+
+.card-2-1,
+.card-2-2 {
+  height: 45%;
+}
+
 .section3-card-containeur21 img {
   width: 100%;
-
+  height: 100%;
   object-fit: cover;
 }
 
