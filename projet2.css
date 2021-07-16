@@ -490,6 +490,14 @@ h2 {
     border-radius: 20px;
     padding: 2.5em;
   }
+
+  #locations1 h3 {
+    font-size: 0.9em;
+  }
+
+  #locations1 p {
+    font-size: 0.9em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -653,6 +661,14 @@ h2 {
     flex-direction: row;
     border-radius: 20px;
     margin-bottom: 1.5em;
+  }
+
+  #locations2 h3 {
+    font-size: 0.9em;
+  }
+
+  #locations2 p {
+    font-size: 0.9em;
   }
 
   .titre_populaire {
