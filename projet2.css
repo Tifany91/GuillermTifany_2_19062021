@@ -149,8 +149,12 @@ header h1 {
   margin: 0 0 0.3em 0;
 }
 
-header p {
+.p_1 {
   margin: 0 0 1em 0;
+}
+
+header p {
+  margin: -0.3em 0 1em 0;
 }
 
 #les_filtres_title {
@@ -168,9 +172,18 @@ header p {
     margin: 0%;
   }
 
-  header p {
+  .p_1 {
     margin: 1em 0 2em 0;
   }
+
+  header p {
+    margin: 0.6em 0 0.5em 0;
+  }
+
+  .info_icon {
+    margin-top: 0.5em;
+  }
+
   .recherche {
     display: flex;
     width: 100%;
@@ -264,6 +277,7 @@ header p {
   display: inline-flex;
   justify-content: space-between;
   font-size: 1em;
+  margin-top: 0.5em;
 }
 
 input {
@@ -367,6 +381,7 @@ input {
 .info_text {
   display: flex;
   align-items: center;
+  margin: 1rem 0 2rem 0;
 }
 
 .info_icon {
@@ -414,12 +429,13 @@ h2 {
 }
 
 #locations1 i {
-  margin: -0.1em;
+  margin: -0.15em;
 }
 
 #text-affichage {
   font-family: Raleway_bold;
   font-size: 1.1em;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 480px) {
@@ -477,7 +493,7 @@ h2 {
   #hebergements {
     flex-direction: row;
     justify-content: space-between;
-    margin: 2.5em;
+    margin: 2em 2.5em;
   }
 
   h2 {
@@ -807,7 +823,7 @@ h2 {
   #section3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 70vh;
+    grid-template-rows: 34em;
     grid-gap: 2.5em;
   }
 
@@ -908,6 +924,7 @@ h2 {
 /*BEGIN FOOTER*/
 
 footer {
+  margin-top: 1em;
   display: flex;
   justify-content: start;
   background-color: #f2f2f2;
