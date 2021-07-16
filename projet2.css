@@ -416,12 +416,7 @@ h2 {
 }
 
 #hebergements h3 {
-  font-size: 0.9em;
   font-family: Raleway_bold;
-}
-
-#hebergements p {
-  font-size: 0.8em;
 }
 
 #locations1 {
@@ -447,17 +442,25 @@ h2 {
     font-size: 1.5em;
   }
 
-  #locations2 {
-    padding: 1.5em;
-    flex-direction: column;
-  }
-
   #locations1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
     padding: 1.5em;
+  }
+
+  #locations1 h3 {
+    font-size: 0.8em;
+  }
+
+  #locations1 p {
+    font-size: 0.8em;
+  }
+
+  #locations1 {
+    padding: 1.5em;
+    flex-direction: column;
   }
 
   #location1-card {
@@ -500,6 +503,13 @@ h2 {
     margin-top: 0em;
   }
 
+  #hebergements h3 {
+    font-size: 0.9em;
+  }
+
+  #hebergements p {
+    font-size: 0.8em;
+  }
   #locations1 {
     width: 60%;
     padding: 2.5em;
@@ -523,7 +533,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
 }
 
 .imgconteneur1 {
@@ -605,11 +614,26 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  #locations2 h3 {
+    font-size: 1em;
+  }
+
+  #locations2 p {
+    font-size: 0.9em;
+  }
+
+  #locations2 {
+    padding: 1.5em;
+    flex-direction: column;
+  }
 
   .imgconteneur2 {
     height: 140px;
     margin: 0 0 1em 0;
-    font-size: 1.2em;
+  }
+
+  .imgconteneur2 h3 {
+    font-size: 2em;
   }
 
   .imgconteneur2 i {
