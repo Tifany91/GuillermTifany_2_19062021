@@ -45,7 +45,7 @@ nav a:visited {
 
 .inscription {
   color: #0065fc;
-  margin-left: 1.5em;
+  font-family: Raleway_bold;
 }
 
 #menu-second {
@@ -69,22 +69,30 @@ nav a:visited {
   }
 
   .inscription {
-    border-top: 6px solid transparent;
     margin-top: 2.5em;
   }
 
-  .menu-large[data-active="true"] a {
-    color: #0065fc;
-    margin-top: 2.5em;
+  #menu-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .menu-large[data-active="true"] {
+  .menu-large a {
+    display: block;
+    text-align: center;
+    padding-top: 2.5em;
+    width: 100%;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 2.5em;
+  }
+
+  .menu-large :hover {
     border-top: 6px solid #0065fc;
-  }
-
-  .menu-large[data-active="false"] {
-    border-top: 6px solid transparent;
-    margin-top: 2.5em;
+    color: #0065fc;
+    margin-top: -5px;
   }
 
   #menu {
@@ -95,8 +103,7 @@ nav a:visited {
     display: flex;
     align-items: center;
     height: 100%;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    width: 50%;
   }
 
   .menu-small {
@@ -124,22 +131,15 @@ nav a:visited {
 
   .menu-small a {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .menu-small[data-active="true"] a {
-    color: #0065fc;
-  }
-
-  .menu-small[data-active="true"] {
-    border-bottom: 3px solid #0065fc;
+    text-align: center;
     padding-bottom: 1em;
-  }
-
-  .menu-small[data-active="false"] {
     border-bottom: 3px solid #f2f2f2;
-    padding-bottom: 1em;
+    width: 100%;
+  }
+
+  .menu-small :hover {
+    border-bottom: 3px solid #0065fc;
+    color: #0065fc;
   }
 }
 
