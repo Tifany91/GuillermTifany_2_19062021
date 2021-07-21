@@ -25,6 +25,7 @@ body {
 
 nav a {
   text-decoration: none;
+  color: black;
 }
 nav a:visited {
   color: black;
